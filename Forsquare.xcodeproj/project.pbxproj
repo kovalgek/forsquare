@@ -14,7 +14,42 @@
 		72FE5B291C58EDCF00C804F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FE5B271C58EDCF00C804F3 /* Main.storyboard */; };
 		72FE5B2B1C58EDCF00C804F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FE5B2A1C58EDCF00C804F3 /* Assets.xcassets */; };
 		72FE5B2E1C58EDCF00C804F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FE5B2C1C58EDCF00C804F3 /* LaunchScreen.storyboard */; };
-		72FE5B391C58EDCF00C804F3 /* ForsquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B381C58EDCF00C804F3 /* ForsquareTests.m */; };
+		72FE5B5C1C58F75700C804F3 /* AbstractTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B501C58F75700C804F3 /* AbstractTransport.m */; };
+		72FE5B5D1C58F75700C804F3 /* AbstractCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B531C58F75700C804F3 /* AbstractCache.m */; };
+		72FE5B5E1C58F75700C804F3 /* AbstractEntityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B551C58F75700C804F3 /* AbstractEntityService.m */; };
+		72FE5B5F1C58F75700C804F3 /* AbstractParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B571C58F75700C804F3 /* AbstractParser.m */; };
+		72FE5B601C58F75700C804F3 /* AbstractSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B591C58F75700C804F3 /* AbstractSerializer.m */; };
+		72FE5B611C58F75700C804F3 /* ServiceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B5B1C58F75700C804F3 /* ServiceLayer.m */; };
+		72FE5B641C58F82900C804F3 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B631C58F82900C804F3 /* Constants.m */; };
+		72FE5B661C58FE2700C804F3 /* VenueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B651C58FE2700C804F3 /* VenueTests.m */; };
+		72FE5B6B1C58FECD00C804F3 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B6A1C58FECD00C804F3 /* CoreDataStack.m */; };
+		72FE5B6E1C58FEF100C804F3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B6C1C58FEF100C804F3 /* Model.xcdatamodeld */; };
+		72FE5B711C59017600C804F3 /* ServiceRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B701C59017600C804F3 /* ServiceRegistry.m */; };
+		72FE5B731C5902AF00C804F3 /* ServiceRegistryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B721C5902AF00C804F3 /* ServiceRegistryTests.m */; };
+		72FE5B781C59062E00C804F3 /* Venue+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B751C59062E00C804F3 /* Venue+CoreDataProperties.m */; };
+		72FE5B791C59062F00C804F3 /* Venue+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B751C59062E00C804F3 /* Venue+CoreDataProperties.m */; };
+		72FE5B7A1C59062F00C804F3 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B771C59062E00C804F3 /* Venue.m */; };
+		72FE5B7B1C59062F00C804F3 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B771C59062E00C804F3 /* Venue.m */; };
+		72FE5B801C590AF400C804F3 /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B7D1C590AF400C804F3 /* Location+CoreDataProperties.m */; };
+		72FE5B811C590AF400C804F3 /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B7D1C590AF400C804F3 /* Location+CoreDataProperties.m */; };
+		72FE5B821C590AF400C804F3 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B7F1C590AF400C804F3 /* Location.m */; };
+		72FE5B831C590AF400C804F3 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B7F1C590AF400C804F3 /* Location.m */; };
+		72FE5B851C590C4200C804F3 /* LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B841C590C4200C804F3 /* LocationTests.m */; };
+		72FE5B871C59107A00C804F3 /* PhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B861C59107A00C804F3 /* PhotoTests.m */; };
+		72FE5B891C59109800C804F3 /* PhotoGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B881C59109800C804F3 /* PhotoGroupTests.m */; };
+		72FE5B8B1C5910AD00C804F3 /* PhotoItemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B8A1C5910AD00C804F3 /* PhotoItemsTests.m */; };
+		72FE5B901C59118400C804F3 /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B8D1C59118400C804F3 /* Photo+CoreDataProperties.m */; };
+		72FE5B911C59118400C804F3 /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B8D1C59118400C804F3 /* Photo+CoreDataProperties.m */; };
+		72FE5B921C59118400C804F3 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B8F1C59118400C804F3 /* Photo.m */; };
+		72FE5B931C59118400C804F3 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B8F1C59118400C804F3 /* Photo.m */; };
+		72FE5B9C1C591A4600C804F3 /* PhotoItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B951C591A4600C804F3 /* PhotoItem+CoreDataProperties.m */; };
+		72FE5B9D1C591A4600C804F3 /* PhotoItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B951C591A4600C804F3 /* PhotoItem+CoreDataProperties.m */; };
+		72FE5B9E1C591A4600C804F3 /* PhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B971C591A4600C804F3 /* PhotoItem.m */; };
+		72FE5B9F1C591A4600C804F3 /* PhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B971C591A4600C804F3 /* PhotoItem.m */; };
+		72FE5BA01C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B991C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m */; };
+		72FE5BA11C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B991C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m */; };
+		72FE5BA21C591A4600C804F3 /* PhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B9B1C591A4600C804F3 /* PhotoGroup.m */; };
+		72FE5BA31C591A4600C804F3 /* PhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5B9B1C591A4600C804F3 /* PhotoGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +76,52 @@
 		72FE5B2D1C58EDCF00C804F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72FE5B2F1C58EDCF00C804F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72FE5B341C58EDCF00C804F3 /* ForsquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForsquareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72FE5B381C58EDCF00C804F3 /* ForsquareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForsquareTests.m; sourceTree = "<group>"; };
 		72FE5B3A1C58EDCF00C804F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FE5B501C58F75700C804F3 /* AbstractTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractTransport.m; path = Classes/BusinessLogic/ServiceLayer/AbstractTransport.m; sourceTree = "<group>"; };
+		72FE5B511C58F75700C804F3 /* AbstractTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractTransport.h; path = Classes/BusinessLogic/ServiceLayer/AbstractTransport.h; sourceTree = "<group>"; };
+		72FE5B521C58F75700C804F3 /* AbstractCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractCache.h; path = Classes/BusinessLogic/ServiceLayer/AbstractCache.h; sourceTree = "<group>"; };
+		72FE5B531C58F75700C804F3 /* AbstractCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractCache.m; path = Classes/BusinessLogic/ServiceLayer/AbstractCache.m; sourceTree = "<group>"; };
+		72FE5B541C58F75700C804F3 /* AbstractEntityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractEntityService.h; path = Classes/BusinessLogic/ServiceLayer/AbstractEntityService.h; sourceTree = "<group>"; };
+		72FE5B551C58F75700C804F3 /* AbstractEntityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractEntityService.m; path = Classes/BusinessLogic/ServiceLayer/AbstractEntityService.m; sourceTree = "<group>"; };
+		72FE5B561C58F75700C804F3 /* AbstractParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractParser.h; path = Classes/BusinessLogic/ServiceLayer/AbstractParser.h; sourceTree = "<group>"; };
+		72FE5B571C58F75700C804F3 /* AbstractParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractParser.m; path = Classes/BusinessLogic/ServiceLayer/AbstractParser.m; sourceTree = "<group>"; };
+		72FE5B581C58F75700C804F3 /* AbstractSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractSerializer.h; path = Classes/BusinessLogic/ServiceLayer/AbstractSerializer.h; sourceTree = "<group>"; };
+		72FE5B591C58F75700C804F3 /* AbstractSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractSerializer.m; path = Classes/BusinessLogic/ServiceLayer/AbstractSerializer.m; sourceTree = "<group>"; };
+		72FE5B5A1C58F75700C804F3 /* ServiceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceLayer.h; path = Classes/BusinessLogic/ServiceLayer/ServiceLayer.h; sourceTree = "<group>"; };
+		72FE5B5B1C58F75700C804F3 /* ServiceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceLayer.m; path = Classes/BusinessLogic/ServiceLayer/ServiceLayer.m; sourceTree = "<group>"; };
+		72FE5B621C58F82900C804F3 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
+		72FE5B631C58F82900C804F3 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Classes/Constants.m; sourceTree = "<group>"; };
+		72FE5B651C58FE2700C804F3 /* VenueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTests.m; sourceTree = "<group>"; };
+		72FE5B691C58FECD00C804F3 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataStack.h; path = Classes/BusinessLogic/DataManager/CoreDataStack.h; sourceTree = "<group>"; };
+		72FE5B6A1C58FECD00C804F3 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataStack.m; path = Classes/BusinessLogic/DataManager/CoreDataStack.m; sourceTree = "<group>"; };
+		72FE5B6D1C58FEF100C804F3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		72FE5B6F1C59017600C804F3 /* ServiceRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceRegistry.h; path = Classes/BusinessLogic/ServiceRegistry.h; sourceTree = "<group>"; };
+		72FE5B701C59017600C804F3 /* ServiceRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceRegistry.m; path = Classes/BusinessLogic/ServiceRegistry.m; sourceTree = "<group>"; };
+		72FE5B721C5902AF00C804F3 /* ServiceRegistryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceRegistryTests.m; sourceTree = "<group>"; };
+		72FE5B741C59062E00C804F3 /* Venue+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Venue+CoreDataProperties.h"; path = "Classes/BusinessLogic/Model/Venue+CoreDataProperties.h"; sourceTree = "<group>"; };
+		72FE5B751C59062E00C804F3 /* Venue+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Venue+CoreDataProperties.m"; path = "Classes/BusinessLogic/Model/Venue+CoreDataProperties.m"; sourceTree = "<group>"; };
+		72FE5B761C59062E00C804F3 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venue.h; path = Classes/BusinessLogic/Model/Venue.h; sourceTree = "<group>"; };
+		72FE5B771C59062E00C804F3 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venue.m; path = Classes/BusinessLogic/Model/Venue.m; sourceTree = "<group>"; };
+		72FE5B7C1C590AF400C804F3 /* Location+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Location+CoreDataProperties.h"; path = "Classes/BusinessLogic/Model/Location+CoreDataProperties.h"; sourceTree = "<group>"; };
+		72FE5B7D1C590AF400C804F3 /* Location+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Location+CoreDataProperties.m"; path = "Classes/BusinessLogic/Model/Location+CoreDataProperties.m"; sourceTree = "<group>"; };
+		72FE5B7E1C590AF400C804F3 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Classes/BusinessLogic/Model/Location.h; sourceTree = "<group>"; };
+		72FE5B7F1C590AF400C804F3 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = Classes/BusinessLogic/Model/Location.m; sourceTree = "<group>"; };
+		72FE5B841C590C4200C804F3 /* LocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTests.m; sourceTree = "<group>"; };
+		72FE5B861C59107A00C804F3 /* PhotoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTests.m; sourceTree = "<group>"; };
+		72FE5B881C59109800C804F3 /* PhotoGroupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGroupTests.m; sourceTree = "<group>"; };
+		72FE5B8A1C5910AD00C804F3 /* PhotoItemsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoItemsTests.m; sourceTree = "<group>"; };
+		72FE5B8C1C59118400C804F3 /* Photo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+CoreDataProperties.h"; path = "Classes/BusinessLogic/Model/Photo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		72FE5B8D1C59118400C804F3 /* Photo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Photo+CoreDataProperties.m"; path = "Classes/BusinessLogic/Model/Photo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		72FE5B8E1C59118400C804F3 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Classes/BusinessLogic/Model/Photo.h; sourceTree = "<group>"; };
+		72FE5B8F1C59118400C804F3 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = Classes/BusinessLogic/Model/Photo.m; sourceTree = "<group>"; };
+		72FE5B941C591A4600C804F3 /* PhotoItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PhotoItem+CoreDataProperties.h"; path = "Classes/BusinessLogic/Model/PhotoItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		72FE5B951C591A4600C804F3 /* PhotoItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PhotoItem+CoreDataProperties.m"; path = "Classes/BusinessLogic/Model/PhotoItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		72FE5B961C591A4600C804F3 /* PhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoItem.h; path = Classes/BusinessLogic/Model/PhotoItem.h; sourceTree = "<group>"; };
+		72FE5B971C591A4600C804F3 /* PhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoItem.m; path = Classes/BusinessLogic/Model/PhotoItem.m; sourceTree = "<group>"; };
+		72FE5B981C591A4600C804F3 /* PhotoGroup+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PhotoGroup+CoreDataProperties.h"; path = "Classes/BusinessLogic/Model/PhotoGroup+CoreDataProperties.h"; sourceTree = "<group>"; };
+		72FE5B991C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PhotoGroup+CoreDataProperties.m"; path = "Classes/BusinessLogic/Model/PhotoGroup+CoreDataProperties.m"; sourceTree = "<group>"; };
+		72FE5B9A1C591A4600C804F3 /* PhotoGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoGroup.h; path = Classes/BusinessLogic/Model/PhotoGroup.h; sourceTree = "<group>"; };
+		72FE5B9B1C591A4600C804F3 /* PhotoGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoGroup.m; path = Classes/BusinessLogic/Model/PhotoGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +163,9 @@
 		72FE5B1A1C58EDCE00C804F3 /* Forsquare */ = {
 			isa = PBXGroup;
 			children = (
+				72FE5B451C58F66C00C804F3 /* External */,
+				72FE5B441C58F66600C804F3 /* Resources */,
+				72FE5B431C58F65F00C804F3 /* Classes */,
 				72FE5B1E1C58EDCE00C804F3 /* AppDelegate.h */,
 				72FE5B1F1C58EDCE00C804F3 /* AppDelegate.m */,
 				72FE5B211C58EDCE00C804F3 /* MasterViewController.h */,
@@ -110,10 +192,139 @@
 		72FE5B371C58EDCF00C804F3 /* ForsquareTests */ = {
 			isa = PBXGroup;
 			children = (
-				72FE5B381C58EDCF00C804F3 /* ForsquareTests.m */,
+				72FE5B671C58FE3200C804F3 /* Model */,
 				72FE5B3A1C58EDCF00C804F3 /* Info.plist */,
+				72FE5B721C5902AF00C804F3 /* ServiceRegistryTests.m */,
 			);
 			path = ForsquareTests;
+			sourceTree = "<group>";
+		};
+		72FE5B431C58F65F00C804F3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5B621C58F82900C804F3 /* Constants.h */,
+				72FE5B631C58F82900C804F3 /* Constants.m */,
+				72FE5B4A1C58F69A00C804F3 /* BusinessLogic */,
+				72FE5B4B1C58F6A700C804F3 /* ViewControllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		72FE5B441C58F66600C804F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5B6C1C58FEF100C804F3 /* Model.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		72FE5B451C58F66C00C804F3 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		72FE5B4A1C58F69A00C804F3 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5B6F1C59017600C804F3 /* ServiceRegistry.h */,
+				72FE5B701C59017600C804F3 /* ServiceRegistry.m */,
+				72FE5B681C58FEBB00C804F3 /* CoreDataStack */,
+				72FE5B4E1C58F6C400C804F3 /* ServiceLayer */,
+				72FE5B4D1C58F6BF00C804F3 /* Model */,
+				72FE5B4C1C58F6B900C804F3 /* Helpers */,
+			);
+			name = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		72FE5B4B1C58F6A700C804F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		72FE5B4C1C58F6B900C804F3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		72FE5B4D1C58F6BF00C804F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5B741C59062E00C804F3 /* Venue+CoreDataProperties.h */,
+				72FE5B751C59062E00C804F3 /* Venue+CoreDataProperties.m */,
+				72FE5B761C59062E00C804F3 /* Venue.h */,
+				72FE5B771C59062E00C804F3 /* Venue.m */,
+				72FE5B7C1C590AF400C804F3 /* Location+CoreDataProperties.h */,
+				72FE5B7D1C590AF400C804F3 /* Location+CoreDataProperties.m */,
+				72FE5B7E1C590AF400C804F3 /* Location.h */,
+				72FE5B7F1C590AF400C804F3 /* Location.m */,
+				72FE5B8C1C59118400C804F3 /* Photo+CoreDataProperties.h */,
+				72FE5B8D1C59118400C804F3 /* Photo+CoreDataProperties.m */,
+				72FE5B8E1C59118400C804F3 /* Photo.h */,
+				72FE5B8F1C59118400C804F3 /* Photo.m */,
+				72FE5B941C591A4600C804F3 /* PhotoItem+CoreDataProperties.h */,
+				72FE5B951C591A4600C804F3 /* PhotoItem+CoreDataProperties.m */,
+				72FE5B961C591A4600C804F3 /* PhotoItem.h */,
+				72FE5B971C591A4600C804F3 /* PhotoItem.m */,
+				72FE5B981C591A4600C804F3 /* PhotoGroup+CoreDataProperties.h */,
+				72FE5B991C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m */,
+				72FE5B9A1C591A4600C804F3 /* PhotoGroup.h */,
+				72FE5B9B1C591A4600C804F3 /* PhotoGroup.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		72FE5B4E1C58F6C400C804F3 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5B4F1C58F6D400C804F3 /* Venue */,
+				72FE5B521C58F75700C804F3 /* AbstractCache.h */,
+				72FE5B531C58F75700C804F3 /* AbstractCache.m */,
+				72FE5B541C58F75700C804F3 /* AbstractEntityService.h */,
+				72FE5B551C58F75700C804F3 /* AbstractEntityService.m */,
+				72FE5B561C58F75700C804F3 /* AbstractParser.h */,
+				72FE5B571C58F75700C804F3 /* AbstractParser.m */,
+				72FE5B581C58F75700C804F3 /* AbstractSerializer.h */,
+				72FE5B591C58F75700C804F3 /* AbstractSerializer.m */,
+				72FE5B511C58F75700C804F3 /* AbstractTransport.h */,
+				72FE5B501C58F75700C804F3 /* AbstractTransport.m */,
+				72FE5B5A1C58F75700C804F3 /* ServiceLayer.h */,
+				72FE5B5B1C58F75700C804F3 /* ServiceLayer.m */,
+			);
+			name = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		72FE5B4F1C58F6D400C804F3 /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Venue;
+			sourceTree = "<group>";
+		};
+		72FE5B671C58FE3200C804F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5B651C58FE2700C804F3 /* VenueTests.m */,
+				72FE5B841C590C4200C804F3 /* LocationTests.m */,
+				72FE5B861C59107A00C804F3 /* PhotoTests.m */,
+				72FE5B881C59109800C804F3 /* PhotoGroupTests.m */,
+				72FE5B8A1C5910AD00C804F3 /* PhotoItemsTests.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		72FE5B681C58FEBB00C804F3 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5B691C58FECD00C804F3 /* CoreDataStack.h */,
+				72FE5B6A1C58FECD00C804F3 /* CoreDataStack.m */,
+			);
+			name = CoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +427,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FE5B641C58F82900C804F3 /* Constants.m in Sources */,
+				72FE5B9E1C591A4600C804F3 /* PhotoItem.m in Sources */,
+				72FE5B6B1C58FECD00C804F3 /* CoreDataStack.m in Sources */,
+				72FE5BA01C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m in Sources */,
+				72FE5B5E1C58F75700C804F3 /* AbstractEntityService.m in Sources */,
+				72FE5B601C58F75700C804F3 /* AbstractSerializer.m in Sources */,
+				72FE5B821C590AF400C804F3 /* Location.m in Sources */,
+				72FE5B5D1C58F75700C804F3 /* AbstractCache.m in Sources */,
+				72FE5B901C59118400C804F3 /* Photo+CoreDataProperties.m in Sources */,
+				72FE5B7A1C59062F00C804F3 /* Venue.m in Sources */,
+				72FE5B921C59118400C804F3 /* Photo.m in Sources */,
 				72FE5B201C58EDCE00C804F3 /* AppDelegate.m in Sources */,
+				72FE5B9C1C591A4600C804F3 /* PhotoItem+CoreDataProperties.m in Sources */,
+				72FE5B711C59017600C804F3 /* ServiceRegistry.m in Sources */,
+				72FE5BA21C591A4600C804F3 /* PhotoGroup.m in Sources */,
 				72FE5B231C58EDCE00C804F3 /* MasterViewController.m in Sources */,
+				72FE5B611C58F75700C804F3 /* ServiceLayer.m in Sources */,
+				72FE5B801C590AF400C804F3 /* Location+CoreDataProperties.m in Sources */,
+				72FE5B5F1C58F75700C804F3 /* AbstractParser.m in Sources */,
 				72FE5B1D1C58EDCE00C804F3 /* main.m in Sources */,
 				72FE5B261C58EDCE00C804F3 /* DetailViewController.m in Sources */,
+				72FE5B6E1C58FEF100C804F3 /* Model.xcdatamodeld in Sources */,
+				72FE5B781C59062E00C804F3 /* Venue+CoreDataProperties.m in Sources */,
+				72FE5B5C1C58F75700C804F3 /* AbstractTransport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +458,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FE5B391C58EDCF00C804F3 /* ForsquareTests.m in Sources */,
+				72FE5B931C59118400C804F3 /* Photo.m in Sources */,
+				72FE5BA11C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m in Sources */,
+				72FE5B731C5902AF00C804F3 /* ServiceRegistryTests.m in Sources */,
+				72FE5B8B1C5910AD00C804F3 /* PhotoItemsTests.m in Sources */,
+				72FE5B7B1C59062F00C804F3 /* Venue.m in Sources */,
+				72FE5B811C590AF400C804F3 /* Location+CoreDataProperties.m in Sources */,
+				72FE5B791C59062F00C804F3 /* Venue+CoreDataProperties.m in Sources */,
+				72FE5B871C59107A00C804F3 /* PhotoTests.m in Sources */,
+				72FE5B911C59118400C804F3 /* Photo+CoreDataProperties.m in Sources */,
+				72FE5B891C59109800C804F3 /* PhotoGroupTests.m in Sources */,
+				72FE5B851C590C4200C804F3 /* LocationTests.m in Sources */,
+				72FE5B831C590AF400C804F3 /* Location.m in Sources */,
+				72FE5B9F1C591A4600C804F3 /* PhotoItem.m in Sources */,
+				72FE5B661C58FE2700C804F3 /* VenueTests.m in Sources */,
+				72FE5BA31C591A4600C804F3 /* PhotoGroup.m in Sources */,
+				72FE5B9D1C591A4600C804F3 /* PhotoItem+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +662,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		72FE5B6C1C58FEF100C804F3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				72FE5B6D1C58FEF100C804F3 /* Model.xcdatamodel */,
+			);
+			currentVersion = 72FE5B6D1C58FEF100C804F3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 72FE5B101C58EDCE00C804F3 /* Project object */;
 }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="addressAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latAttribute" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lngAttribute" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" inverseName="location" inverseEntity="Venue" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="countAttribute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoGroup" inverseName="photo" inverseEntity="PhotoGroup" syncable="YES"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" inverseName="photos" inverseEntity="Venue" syncable="YES"/>
+    </entity>
+    <entity name="PhotoGroup" representedClassName="PhotoGroup" syncable="YES">
+        <attribute name="nameAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoItem" inverseName="group" inverseEntity="PhotoItem" syncable="YES"/>
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="groups" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="PhotoItem" representedClassName="PhotoItem" syncable="YES">
+        <attribute name="createdAtAttribute" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="heightAttribute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idAttribute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="prefixAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suffixAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="widthAttribute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoGroup" inverseName="items" inverseEntity="PhotoGroup" syncable="YES"/>
+    </entity>
+    <entity name="Venue" representedClassName="Venue" syncable="YES">
+        <attribute name="idAttribute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nameAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="venue" inverseEntity="Location" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="venue" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Venue" positionX="-398" positionY="-18" width="128" height="105"/>
+        <element name="Location" positionX="-216" positionY="-54" width="128" height="105"/>
+        <element name="Photo" positionX="-225" positionY="72" width="128" height="90"/>
+        <element name="PhotoGroup" positionX="-63" positionY="93" width="128" height="103"/>
+        <element name="PhotoItem" positionX="97" positionY="180" width="128" height="148"/>
+    </elements>
+</model>
