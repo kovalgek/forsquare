@@ -10,6 +10,7 @@
 #import "CoreDataStack.h"
 #import "PhotoGroup.h"
 #import "Photo.h"
+#import "PhotoItem.h"
 
 @interface PhotoGroupTests : XCTestCase
 {
@@ -65,5 +66,40 @@
 {
     XCTAssertTrue([photoGroup.items isKindOfClass:[NSSet class]], @"PhotGroup should has photo items set");
 }
+
+- (void)testForAListOfPhotoItems
+{
+    XCTAssertTrue([[photoGroup sortedByCrationAtPhotoItems] isKindOfClass: [NSArray class]], @"PhotoGroup should provide an array of photo items");
+}
+
+- (void)testForInitiallyEmptyPhotoItemList
+{
+    XCTAssertEqual([[photoGroup sortedByCrationAtPhotoItems] count], (NSUInteger)0, @"No photo item added yet, count should be zero");
+}
+
+- (void)testAddingAPhotoItemToTheList
+{
+    PhotoItem *photoItem = [NSEntityDescription insertNewObjectForEntityForName:@"PhotoItem" inManagedObjectContext:coreDataStack.managedObjectContext];
+    photoGroup.items = [NSSet setWithObject:photoItem];
+    XCTAssertEqual([[photoGroup sortedByCrationAtPhotoItems] count], (NSUInteger)1, @"Add a photoItem, and the count of items should go up");
+}
+
+- (void)testGroupsAreListedSortedByName
+{
+    PhotoItem *photoItem0 = [NSEntityDescription insertNewObjectForEntityForName:@"PhotoItem" inManagedObjectContext:coreDataStack.managedObjectContext];
+    photoItem0.createdAtAttribute = @0;
+    
+    PhotoItem *photoItem1 = [NSEntityDescription insertNewObjectForEntityForName:@"PhotoItem" inManagedObjectContext:coreDataStack.managedObjectContext];
+    photoItem1.createdAtAttribute = @1024;
+    
+    photoGroup.items = [NSSet setWithObjects:photoItem0, photoItem1, nil];
+    
+    NSArray *sortedItems = [photoGroup sortedByCrationAtPhotoItems];
+    PhotoItem *firstPhotoItem = [sortedItems objectAtIndex:0];
+    PhotoItem *secondPhotoItem = [sortedItems objectAtIndex:1];
+    XCTAssertEqualObjects(firstPhotoItem, photoItem1, @"Created at 1024 should be first");
+    XCTAssertEqualObjects(secondPhotoItem, photoItem0, @"Created at 0 should be last");
+}
+
 
 @end

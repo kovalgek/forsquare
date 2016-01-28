@@ -17,4 +17,9 @@
 @dynamic venue;
 @dynamic groups;
 
+- (NSArray *)sortedGroup
+{
+    return [self.groups sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nameAttribute" ascending:YES]]];
+}
+
 @end

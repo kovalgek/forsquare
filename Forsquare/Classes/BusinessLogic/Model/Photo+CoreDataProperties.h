@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addGroups:(NSSet<NSManagedObject *> *)values;
 - (void)removeGroups:(NSSet<NSManagedObject *> *)values;
 
+- (NSArray *)sortedGroup;
+
 @end
 
 NS_ASSUME_NONNULL_END

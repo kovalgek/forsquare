@@ -18,4 +18,9 @@
 @dynamic photo;
 @dynamic items;
 
+- (NSArray *)sortedByCrationAtPhotoItems
+{
+    return [self.items sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"createdAtAttribute" ascending:NO]]];
+}
+
 @end
