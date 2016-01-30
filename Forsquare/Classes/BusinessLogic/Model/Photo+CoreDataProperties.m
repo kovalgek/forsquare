@@ -10,16 +10,12 @@
 //
 
 #import "Photo+CoreDataProperties.h"
+#import "PhotoGroup.h"
 
 @implementation Photo (CoreDataProperties)
 
 @dynamic countAttribute;
 @dynamic venue;
 @dynamic groups;
-
-- (NSArray *)sortedGroup
-{
-    return [self.groups sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nameAttribute" ascending:YES]]];
-}
 
 @end

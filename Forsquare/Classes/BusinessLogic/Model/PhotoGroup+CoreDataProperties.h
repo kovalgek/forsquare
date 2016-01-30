@@ -29,8 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addItems:(NSSet<PhotoItem *> *)values;
 - (void)removeItems:(NSSet<PhotoItem *> *)values;
 
-- (NSArray *)sortedByCrationAtPhotoItems;
-
 @end
 
 NS_ASSUME_NONNULL_END

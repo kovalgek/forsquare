@@ -15,13 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PhotoItem (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSNumber *idAttribute;
+@property (nullable, nonatomic, retain) NSString *idAttribute;
 @property (nullable, nonatomic, retain) NSNumber *createdAtAttribute;
 @property (nullable, nonatomic, retain) NSString *prefixAttribute;
 @property (nullable, nonatomic, retain) NSString *suffixAttribute;
 @property (nullable, nonatomic, retain) NSNumber *widthAttribute;
 @property (nullable, nonatomic, retain) NSNumber *heightAttribute;
 @property (nullable, nonatomic, retain) NSManagedObject *group;
+
+@end
+
+@interface PhotoItem (CoreDataGeneratedAccessors)
 
 @end
 

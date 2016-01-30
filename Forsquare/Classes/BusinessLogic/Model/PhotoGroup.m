@@ -12,6 +12,20 @@
 
 @implementation PhotoGroup
 
-// Insert code here to add functionality to your managed object subclass
+- (NSArray *)sortedByCrationAtPhotoItems
+{
+    return [self.items sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"createdAtAttribute" ascending:NO]]];
+}
+
++ (EKManagedObjectMapping *)objectMapping
+{
+    return [EKManagedObjectMapping mappingForEntityName:NSStringFromClass([PhotoGroup class])
+                                              withBlock:^(EKManagedObjectMapping *mapping) {
+                                                  [mapping mapPropertiesFromDictionary:@{@"type" : @"typeAttribute",
+                                                                                         @"name" : @"nameAttribute"}];
+                                                  [mapping hasMany:[PhotoItem class] forKeyPath:@"items"];
+                                              }];
+}
+
 
 @end

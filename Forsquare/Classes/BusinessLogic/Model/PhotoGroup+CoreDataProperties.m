@@ -10,6 +10,7 @@
 //
 
 #import "PhotoGroup+CoreDataProperties.h"
+#import "PhotoItem.h"
 
 @implementation PhotoGroup (CoreDataProperties)
 
@@ -17,10 +18,5 @@
 @dynamic nameAttribute;
 @dynamic photo;
 @dynamic items;
-
-- (NSArray *)sortedByCrationAtPhotoItems
-{
-    return [self.items sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"createdAtAttribute" ascending:NO]]];
-}
 
 @end

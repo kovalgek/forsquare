@@ -10,6 +10,7 @@
 #import "CoreDataStack.h"
 #import "Venue.h"
 #import "Location.h"
+#import "Photo.h"
 
 @interface VenueTests : XCTestCase
 {
@@ -26,11 +27,14 @@
     [super setUp];
     coreDataStack = [[CoreDataStack alloc] init];
     venue = [NSEntityDescription insertNewObjectForEntityForName:@"Venue" inManagedObjectContext:coreDataStack.managedObjectContext];
-    venue.idAttribute = @1;
+    venue.idAttribute = @"430d0a00f964a5203e271fe3";
     venue.nameAttribute = @"John";
     
     location = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:coreDataStack.managedObjectContext];
     venue.location = location;
+    
+    Photo *photo = [NSEntityDescription insertNewObjectForEntityForName:@"Photo" inManagedObjectContext:coreDataStack.managedObjectContext];
+    venue.photos = photo;
 }
 
 - (void)tearDown
@@ -48,7 +52,7 @@
 
 - (void)testThatVenueHasId
 {
-    XCTAssertEqualObjects(venue.idAttribute, @1, @"Venue should has an id attribute");
+    XCTAssertEqualObjects(venue.idAttribute, @"430d0a00f964a5203e271fe3", @"Venue should has an id attribute");
 }
 
 - (void)testThatVEnueHasName
@@ -63,7 +67,7 @@
 
 - (void)testThatVenueHasPhotoSet
 {
-    XCTAssertTrue([venue.photos isKindOfClass:[NSSet class]], @"Venue should has photos set");
+    XCTAssertTrue([[[venue.photos entity] name] isEqualToString: NSStringFromClass([Photo class])], @"Venue should has photos");
 }
 
 @end

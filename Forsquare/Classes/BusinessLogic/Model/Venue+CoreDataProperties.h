@@ -17,20 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Venue (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSNumber *idAttribute;
+@property (nullable, nonatomic, retain) NSString *idAttribute;
 @property (nullable, nonatomic, retain) NSString *nameAttribute;
 @property (nullable, nonatomic, retain) Location *location;
-@property (nullable, nonatomic, retain) NSSet<Photo *> *photos;
+@property (nullable, nonatomic, retain) Photo *photos;
 
 @end
 
-@interface Venue (CoreDataGeneratedAccessors)
-
-- (void)addPhotosObject:(Photo *)value;
-- (void)removePhotosObject:(Photo *)value;
-- (void)addPhotos:(NSSet<Photo *> *)values;
-- (void)removePhotos:(NSSet<Photo *> *)values;
-
-@end
 
 NS_ASSUME_NONNULL_END

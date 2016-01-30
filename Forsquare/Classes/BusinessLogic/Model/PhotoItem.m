@@ -10,6 +10,18 @@
 
 @implementation PhotoItem
 
-// Insert code here to add functionality to your managed object subclass
++ (EKManagedObjectMapping *)objectMapping
+{
+    return [EKManagedObjectMapping mappingForEntityName:NSStringFromClass([PhotoItem class])
+                                              withBlock:^(EKManagedObjectMapping *mapping) {
+                                                  [mapping mapPropertiesFromDictionary:@{@"id"        : @"idAttribute",
+                                                                                         @"createdAt" : @"createdAtAttribute",
+                                                                                         @"prefix"    : @"prefixAttribute",
+                                                                                         @"suffix"    : @"suffixAttribute",
+                                                                                         @"width"     : @"widthAttribute",
+                                                                                         @"height"    : @"heightAttribute",}];
+                                              }];
+}
+
 
 @end

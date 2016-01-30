@@ -10,6 +10,16 @@
 
 @implementation Venue
 
-// Insert code here to add functionality to your managed object subclass
++ (EKManagedObjectMapping *)objectMapping
+{
+    return [EKManagedObjectMapping mappingForEntityName:NSStringFromClass([Venue class])
+                                              withBlock:^(EKManagedObjectMapping *mapping) {
+                                                  mapping.primaryKey = @"idAttribute";
+                                                  [mapping mapPropertiesFromDictionary:@{@"id" : @"idAttribute",
+                                                                                         @"name" : @"nameAttribute"}];
+                                                  [mapping hasOne:[Location class] forKeyPath:@"location"];
+                                                  [mapping hasOne:[Photo class] forKeyPath:@"photos"];
+                                              }];
+}
 
 @end

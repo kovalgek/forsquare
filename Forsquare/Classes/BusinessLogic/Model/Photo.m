@@ -8,9 +8,22 @@
 
 #import "Photo.h"
 #import "Venue.h"
+#import "PhotoGroup.h"
 
 @implementation Photo
 
-// Insert code here to add functionality to your managed object subclass
+- (NSArray *)sortedGroup
+{
+    return [self.groups sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nameAttribute" ascending:YES]]];
+}
+
++ (EKManagedObjectMapping *)objectMapping
+{
+    return [EKManagedObjectMapping mappingForEntityName:NSStringFromClass([Photo class])
+                                              withBlock:^(EKManagedObjectMapping *mapping) {
+                                                  [mapping mapPropertiesFromDictionary:@{@"count" : @"countAttribute"}];
+                                                  [mapping hasMany:[PhotoGroup class] forKeyPath:@"groups"];
+                                              }];
+}
 
 @end

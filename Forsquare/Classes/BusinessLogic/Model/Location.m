@@ -11,6 +11,14 @@
 
 @implementation Location
 
-// Insert code here to add functionality to your managed object subclass
++ (EKManagedObjectMapping *)objectMapping
+{
+    return [EKManagedObjectMapping mappingForEntityName:NSStringFromClass([Location class])
+                                              withBlock:^(EKManagedObjectMapping *mapping) {
+                                                  [mapping mapPropertiesFromDictionary:@{@"address" : @"addressAttribute",
+                                                                                         @"lat"     : @"latAttribute",
+                                                                                         @"lng"     : @"lngAttribute"}];
+                                              }];
+}
 
 @end

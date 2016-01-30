@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <EasyMapping/EasyMapping.h>
 
 @class Venue;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Photo : NSManagedObject
+@interface Photo : NSManagedObject <EKMappingProtocol>
 
-// Insert code here to declare functionality of your managed object subclass
+- (NSArray *)sortedGroup;
++ (EKManagedObjectMapping *)objectMapping;
 
 @end
 

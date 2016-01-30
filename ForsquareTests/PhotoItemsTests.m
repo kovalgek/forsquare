@@ -29,7 +29,7 @@
     photoGroup = [NSEntityDescription insertNewObjectForEntityForName:@"PhotoGroup" inManagedObjectContext:coreDataStack.managedObjectContext];
     
     photoItem = [NSEntityDescription insertNewObjectForEntityForName:@"PhotoItem" inManagedObjectContext:coreDataStack.managedObjectContext];
-    photoItem.idAttribute = @1;
+    photoItem.idAttribute = @"511cef52e4b00d6a2c7fddd5";
     photoItem.prefixAttribute = @"https://irs2.4sqi.net/img/general/";
     photoItem.suffixAttribute = @"/690170_HnduV5yM9RLNUHQseOOvDi3OCm4AoYmMld79iVTxrPg.jpg";
     photoItem.widthAttribute = @5;
@@ -53,7 +53,7 @@
 
 - (void)testThatPhotoItemHasId
 {
-    XCTAssertEqualObjects(photoItem.idAttribute, @1, @"Photo item should has an id attribute");
+    XCTAssertEqualObjects(photoItem.idAttribute, @"511cef52e4b00d6a2c7fddd5", @"Photo item should has an id attribute");
 }
 
 - (void)testThatPhotoItemHasPrefix

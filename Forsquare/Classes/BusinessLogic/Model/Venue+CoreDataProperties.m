@@ -10,6 +10,7 @@
 //
 
 #import "Venue+CoreDataProperties.h"
+#import "Location.h"
 
 @implementation Venue (CoreDataProperties)
 

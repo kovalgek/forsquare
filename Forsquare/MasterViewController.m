@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "ServiceRegistry.h"
 
 @interface MasterViewController ()
 
