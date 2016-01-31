@@ -8,6 +8,7 @@
 
 #import "AbstractEntityService.h"
 #import "VenueServiceDelegate.h"
+#import "VenueTransportDelegate.h"
 
 enum
 {
@@ -17,14 +18,11 @@ enum
 
 @class Venue;
 
-@interface VenueService : AbstractEntityService
+@interface VenueService : AbstractEntityService <VenueTransportDelegate>
+
 @property (nonatomic, weak) id<VenueServiceDelegate> delegate;
 
 - (void)requestVenues;
-- (void)searchingForVenuesFailedWithError:(NSError *)error;
-- (void)receivedVenuesJSON:(NSString *)objectNotation;
-
 - (void)requestDetailedInfoForVenue:(Venue *)venue;
-- (void)requestDetailedInfoForVenueFailedWithError:(NSError *)error;
-- (void)receivedDetailedInfoForVenueJSON:(NSString *)objectNotation;
+
 @end

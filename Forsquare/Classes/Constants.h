@@ -8,16 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-static BOOL TEST_MODE = YES;
+static NSString *CLIENT_ID     = @"BH30UAKM02OBQKOPRFXWVI2VXYDONAFSGD10AMMEHP3QOOZ3";
+static NSString *CLIENT_SECRET = @"XJNTU1ZJSDJQBMTUDOXZYMWIIYM0C2KUMLG0OEVVNRDJMNVI";
 
-static NSString *GATE_DB_VERSION        = @"GateDatabaseVersion";
-static NSString *CURRENT_DABASE_VERSION = @"0.1";
+static NSString *API_URL = @"https://api.foursquare.com/v2/";
 
-static NSString *HOST                   = @"api.eventgrid.com";
-static NSString *DEV_HOST               = @"api.dev.eventgrid.com";
-static NSString *QA_HOST                = @"api.qa.eventgrid.com";
-static NSString *STABLE_HOST            = @"api.stable.eventgrid.com";
-
+static NSString *VENUES_SEARCH = @"venues/search?ll=40.7,-74&client_id=%@&client_secret=%@&v=20160130";
+static NSString *VENUE_BY_ID   = @"venues/%@?client_id=%@&client_secret=%@&v=20160130";
 
 @interface Constants : NSObject
 @property (nonatomic, strong) NSString *host;

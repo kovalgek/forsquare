@@ -9,5 +9,6 @@
 #import "AbstractCache.h"
 
 @interface VenueCache : AbstractCache
-
+- (NSArray *)venues;
+- (Venue *)venueByID:(NSString *)venueID;
 @end

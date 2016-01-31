@@ -19,8 +19,7 @@
 {
     if(self = [super init])
     {
-//        self.authService       = [[AuthService alloc] init];
-
+        self.venueService = [[VenueService alloc] init];
     }
     return self;
 }

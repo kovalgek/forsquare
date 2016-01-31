@@ -26,16 +26,16 @@ static Constants *_instance;
     if(self = [super init])
     {
         self.eventLink = @"https://eventgrid.com/Events/%d";
-        self.host     = HOST;
-        self.base_url = [NSString stringWithFormat: @"https://%@/",HOST];
+        //self.host     = HOST;
+        //self.base_url = [NSString stringWithFormat: @"https://%@/",HOST];
     }
     return self;
 }
 
 - (void) reset
 {
-    self.host     = HOST;
-    self.base_url = [NSString stringWithFormat: @"https://%@/",HOST];
+    //self.host     = HOST;
+    //self.base_url = [NSString stringWithFormat: @"https://%@/",HOST];
 }
 
 @end

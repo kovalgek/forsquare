@@ -11,4 +11,5 @@
 - (void)requestingVenuesFailedWithError:(NSError *)error;
 - (void)requestingVenueDetailedInfoFailedWithError:(NSError *)error;
 - (void)didReceiveVenues:(NSArray *)venues;
+
 @end

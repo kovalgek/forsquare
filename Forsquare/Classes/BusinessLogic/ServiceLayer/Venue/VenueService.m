@@ -27,6 +27,8 @@ NSString *VenueSearchFailedError = @"VenueSearchFailedError";
         self.abstractTransport = [[VenueTransport alloc] init];
         self.abstractCache = [[VenueCache alloc] init];
         self.abstractParser = [[VenueParser alloc] init];
+        
+        ((VenueTransport *)self.abstractTransport).delegate = self;
     }
     return self;
 }

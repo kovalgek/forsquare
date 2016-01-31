@@ -7,11 +7,22 @@
 //
 
 #import "AbstractTransport.h"
+#import "VenueTransportDelegate.h"
 
-@interface VenueTransport : AbstractTransport
+@interface VenueTransport : AbstractTransport <NSURLConnectionDataDelegate>
+{
+@protected
+    NSURL *fetchingURL;
+    NSURLConnection *fetchingConnection;
+    NSMutableData *receivedData;
+@private
+    void (^errorHandler)(NSError *);
+    void (^successHandler)(NSString *);
+}
+
+@property (nonatomic, weak) id <VenueTransportDelegate> delegate;
 
 - (void)requestVenues;
-
 - (void)requestDetailedInfoForVenueID:(NSString *)venueID;
 
 @end

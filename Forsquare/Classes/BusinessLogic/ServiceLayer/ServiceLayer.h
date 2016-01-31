@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-//@class AuthService;
+#import "VenueService.h"
 
 @interface ServiceLayer : NSObject
-//@property (nonatomic, strong) AuthService       *authService;
+@property (nonatomic, strong) VenueService *venueService;
 @end

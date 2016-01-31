@@ -7,7 +7,18 @@
 //
 
 #import "VenueCache.h"
+#import "Venue.h"
 
 @implementation VenueCache
+
+- (NSArray *)venues
+{
+    return nil;
+}
+
+- (Venue *)venueByID:(NSString *)venueID
+{
+    return nil;
+}
 
 @end

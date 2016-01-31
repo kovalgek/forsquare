@@ -107,7 +107,7 @@ static NSString *emptyItemsArray = @"{ \"items\": [] }";
     XCTAssertThrows([venueParser fillInDetailedInfoForVenue:nil fromJSON:detailedVenueJSON], @"No reason to expect that a nil venue is passed");
 }
 
-- (void)testNonJSONDataDoesNotCauseABodyToBeAddedToAQuestion
+- (void)testNonJSONDataDoesNotCauseABodyToBeAddedToAVenue
 {
     [venueParser fillInDetailedInfoForVenue:venue fromJSON:stringIsNotJSON];
     XCTAssertNil(venue.photos, @"Photo should not have been added");
@@ -119,7 +119,7 @@ static NSString *emptyItemsArray = @"{ \"items\": [] }";
     XCTAssertNil(venue.photos, @"Photo should not have been added");
 }
 
-- (void)testBodyContainedInJSONIsAddedToQuestion
+- (void)testDetailedInfoContainedInJSONIsAddedToVenue
 {
     [venueParser fillInDetailedInfoForVenue:venue fromJSON:detailedVenueJSON];
     XCTAssertEqualObjects(venue.photos.countAttribute, @1555, @"The correct question body is added");
