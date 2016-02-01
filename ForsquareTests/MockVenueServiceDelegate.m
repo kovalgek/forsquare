@@ -25,4 +25,9 @@
     self.fetchError = error;
 }
 
+- (void)didReceiveVenue:(Venue *)venue
+{
+    
+}
+
 @end

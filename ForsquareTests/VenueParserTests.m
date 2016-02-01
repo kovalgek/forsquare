@@ -122,13 +122,7 @@ static NSString *emptyItemsArray = @"{ \"items\": [] }";
 - (void)testDetailedInfoContainedInJSONIsAddedToVenue
 {
     [venueParser fillInDetailedInfoForVenue:venue fromJSON:detailedVenueJSON];
-    XCTAssertEqualObjects(venue.photos.countAttribute, @1555, @"The correct question body is added");
+    XCTAssertEqualObjects(venue.photos.countAttribute, @1555, @"The correct detailed info is added");
 }
-/*
-- (void)testEmptyQuestionsArrayDoesNotCrash
-{
-    XCTAssertNoThrow([questionBuilder fillInDetailsForQuestion: question fromJSON: emptyQuestionsArray], @"Don't throw if no questions are found");
-}
-*/
 
 @end

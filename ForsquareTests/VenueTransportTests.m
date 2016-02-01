@@ -13,6 +13,7 @@
 #import "MockVenueService.h"
 #import "FakeURLResponse.h"
 #import "Constants.h"
+#import "GeoService.h"
 
 @interface VenueTransportTests : XCTestCase
 {
@@ -21,6 +22,7 @@
     MockVenueService *mockVenueService;
     FakeURLResponse *fourOhFourResponse;
     NSData *receivedData;
+    GeoService *geoService;
 }
 @end
 
@@ -35,6 +37,7 @@
     nonNetworkedVenueTransport.delegate = mockVenueService;
     fourOhFourResponse = [[FakeURLResponse alloc] initWithStatusCode: 404];
     receivedData = [@"Result" dataUsingEncoding: NSUTF8StringEncoding];
+    geoService = [[GeoService alloc] init];
 }
 
 - (void)tearDown
@@ -44,24 +47,25 @@
     mockVenueService = nil;
     fourOhFourResponse = nil;
     receivedData = nil;
+    geoService = nil;
     [super tearDown];
 }
 
 - (void)testSearchingForVenuesCallsVenuesAPI
 {
     [inspectableVenueTransport requestVenues];
-    NSString *urlStr = [NSString stringWithFormat:@"%@%@",API_URL, [NSString stringWithFormat:VENUES_SEARCH, CLIENT_ID, CLIENT_SECRET]];
+    NSString *urlStr = [NSString stringWithFormat:@"%@%@",API_URL, [NSString stringWithFormat:VENUES_SEARCH, geoService.currentLocation.coordinate.latitude, geoService.currentLocation.coordinate.longitude, CLIENT_ID, CLIENT_SECRET]];
     XCTAssertEqualObjects([[inspectableVenueTransport URLToFetch] absoluteString],urlStr, @"Use the search API to find venues");
 }
 
-- (void)testFillingInQuestionBodyCallsQuestionAPI
+- (void)testFillingInVenueCallsVenueIDAPI
 {
     [inspectableVenueTransport requestDetailedInfoForVenueID:@"123"];
     NSString *urlStr = [NSString stringWithFormat:@"%@%@",API_URL, [NSString stringWithFormat:VENUE_BY_ID, @"123", CLIENT_ID, CLIENT_SECRET]];
     XCTAssertEqualObjects([[inspectableVenueTransport URLToFetch] absoluteString],urlStr, @"Use the venue/id API to fetch detailed venue");
 }
 
-- (void)testSearchingForQuestionsCreatesURLConnection
+- (void)testSearchingForVenuesCreatesURLConnection
 {
     [inspectableVenueTransport requestVenues];
     XCTAssertNotNil([inspectableVenueTransport currentURLConnection], @"There should be a URL connection in-flight now.");
@@ -106,7 +110,7 @@
     XCTAssertEqual(mockVenueService.venueSearchFailureErrorCode, 12345, @"Failure to connect should get passed to the delegate");
 }
 
-- (void)testSuccessfulQuestionSearchPassesDataToDelegate
+- (void)testSuccessfulVenueSearchPassesDataToDelegate
 {
     [nonNetworkedVenueTransport requestVenues];
     [nonNetworkedVenueTransport setReceivedData: receivedData];
