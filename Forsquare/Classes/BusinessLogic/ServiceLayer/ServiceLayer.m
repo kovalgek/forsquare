@@ -20,6 +20,7 @@
     if(self = [super init])
     {
         self.venueService = [[VenueService alloc] init];
+        self.geoService   = [[GeoService alloc] init];
     }
     return self;
 }

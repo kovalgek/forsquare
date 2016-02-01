@@ -8,6 +8,8 @@
 
 #import "VenueTransport.h"
 #import "Constants.h"
+#import "GeoService.h"
+#import "ServiceRegistry.h"
 
 NSString *VenueTransportErrorDomain = @"VenueTransportErrorDomain";
 
@@ -18,6 +20,7 @@ NSString *VenueTransportErrorDomain = @"VenueTransportErrorDomain";
            successHandler:(void (^)(NSString *))successBlock
 {
     fetchingURL = url;
+    NSLog(@"fetchingURL=%@",fetchingURL);
     errorHandler = [errorBlock copy];
     successHandler = [successBlock copy];
     NSURLRequest *request = [NSURLRequest requestWithURL: fetchingURL];
@@ -40,7 +43,20 @@ NSString *VenueTransportErrorDomain = @"VenueTransportErrorDomain";
 
 - (void)requestVenues
 {
-    [self fetchContentAtURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",API_URL, [NSString stringWithFormat:VENUES_SEARCH, CLIENT_ID,CLIENT_SECRET]]]
+    float latitude, longitude;
+    
+    if(SREG.serviceLayer.geoService.currentLocation)
+    {
+        latitude  = SREG.serviceLayer.geoService.currentLocation.coordinate.latitude;
+        longitude = SREG.serviceLayer.geoService.currentLocation.coordinate.longitude;
+    }
+    else
+    {
+        latitude = DEFAULT_LATITUDE;
+        longitude = DEFAULT_LONGITUDE;
+    }
+    
+    [self fetchContentAtURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",API_URL, [NSString stringWithFormat:VENUES_SEARCH, latitude, longitude, CLIENT_ID,CLIENT_SECRET]]]
                errorHandler: ^(NSError *error) {
                    [_delegate searchingForVenuesFailedWithError: error];
                }

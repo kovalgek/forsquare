@@ -36,6 +36,8 @@
     photoItem.heightAttribute = @6;
     photoItem.createdAtAttribute = @7;
     photoItem.group = photoGroup;
+    photoItem.imageAttribute = UIImagePNGRepresentation([UIImage imageNamed:@""]);
+    photoItem.imageIsDownloadingAttribute = @YES;
 }
 
 - (void)tearDown
@@ -84,6 +86,16 @@
 - (void)testThatPhotoGroupHasAPhotoGroup
 {
     XCTAssertTrue([[[photoItem.group entity] name] isEqualToString: NSStringFromClass([PhotoGroup class])], @"PhotoItem should has photoGroup");
+}
+
+- (void)testThatPhotoItemHasAnImage
+{
+    XCTAssertEqualObjects(photoItem.imageAttribute, UIImagePNGRepresentation([UIImage imageNamed:@""]),@"Photo item should has an image");
+}
+
+- (void)testThatPhoyoItemHasAnImageDownloadingFlag
+{
+    XCTAssertEqualObjects(photoItem.imageIsDownloadingAttribute, @YES, @"Photo item should has an image downloading flag");
 }
 
 @end

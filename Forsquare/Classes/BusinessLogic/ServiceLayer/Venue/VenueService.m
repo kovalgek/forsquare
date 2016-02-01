@@ -105,6 +105,7 @@ NSString *VenueSearchFailedError = @"VenueSearchFailedError";
 - (void)receivedDetailedInfoForVenueJSON:(NSString *)objectNotation
 {
     [((VenueParser *)self.abstractParser) fillInDetailedInfoForVenue:self.venueNeedingDetailedInfo fromJSON:objectNotation];
+    [self.delegate didReceiveVenue:self.venueNeedingDetailedInfo];
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AbstractCache.h"
+#import "Venue.h"
 
 @interface VenueCache : AbstractCache
 - (NSArray *)venues;

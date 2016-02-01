@@ -144,6 +144,12 @@
     XCTAssertNotNil([[[delegate fetchError] userInfo] objectForKey: NSUnderlyingErrorKey], @"Delegate should have found out about this error");
 }
 
+- (void)testDelegateNotToldAboutErrorWhenVenueReceived
+{
+    [venueService requestDetailedInfoForVenue: venue];
+    XCTAssertNil([delegate fetchError], @"No error should be received on success");
+}
+
 - (void)testVenueServicePassesRetrievedVenueDetailedInfoToVenueParser
 {
     [venueService receivedDetailedInfoForVenueJSON: @"Fake JSON"];

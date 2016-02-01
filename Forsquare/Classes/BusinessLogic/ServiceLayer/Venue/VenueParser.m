@@ -54,6 +54,7 @@ NSString *VenueParserErrorDomain = @"VenueParserErrorDomain";
                                                                                     withMapping:[Venue objectMapping]
                                                                                    fetchRequest:fetchRequest
                                                                          inManagedObjectContext:SREG.coreDataStack.managedObjectContext];
+    [SREG.coreDataStack save];
     return venueObjects;
 }
 
@@ -76,13 +77,7 @@ NSString *VenueParserErrorDomain = @"VenueParserErrorDomain";
                           withMapping:[Venue objectMapping]
                inManagedObjectContext:SREG.coreDataStack.managedObjectContext];
     
-    /*
-    NSString *venueBody = [[[parsedObject objectForKey: @"items"] lastObject] objectForKey: @"body"];
-    if (questionBody)
-    {
-        question.body = questionBody;
-    }
-     */
+    [SREG.coreDataStack save];
 }
 
 @end

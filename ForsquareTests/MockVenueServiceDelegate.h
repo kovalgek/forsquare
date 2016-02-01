@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "VenueServiceDelegate.h"
 
+@class Venue;
+
 @interface MockVenueServiceDelegate : NSObject <VenueServiceDelegate>
 @property (strong, nonatomic) NSError *fetchError;
 @property (strong, nonatomic) NSArray *receivedVenues;

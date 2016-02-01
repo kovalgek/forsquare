@@ -21,6 +21,8 @@
         <attribute name="createdAtAttribute" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="heightAttribute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="idAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageAttribute" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageIsDownloadingAttribute" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="prefixAttribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="suffixAttribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="widthAttribute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -36,7 +38,7 @@
         <element name="Location" positionX="-216" positionY="-54" width="128" height="105"/>
         <element name="Photo" positionX="-225" positionY="72" width="128" height="90"/>
         <element name="PhotoGroup" positionX="-63" positionY="93" width="128" height="103"/>
-        <element name="PhotoItem" positionX="97" positionY="180" width="128" height="150"/>
+        <element name="PhotoItem" positionX="97" positionY="180" width="128" height="180"/>
         <element name="Venue" positionX="-398" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

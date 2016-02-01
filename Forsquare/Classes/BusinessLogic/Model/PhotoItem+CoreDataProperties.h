@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSNumber *widthAttribute;
 @property (nullable, nonatomic, retain) NSNumber *heightAttribute;
 @property (nullable, nonatomic, retain) NSManagedObject *group;
+@property (nullable, nonatomic, retain) NSNumber *imageIsDownloadingAttribute;
+@property (nullable, nonatomic, retain) NSData *imageAttribute;
 
 @end
 

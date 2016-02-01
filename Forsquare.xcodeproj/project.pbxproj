@@ -76,6 +76,28 @@
 		72FE5BEA1C5E4B7900C804F3 /* MockVenueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5BE91C5E4B7900C804F3 /* MockVenueService.m */; };
 		72FE5BED1C5E565F00C804F3 /* VenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5BEC1C5E565F00C804F3 /* VenuesViewController.m */; };
 		72FE5BEE1C5E565F00C804F3 /* VenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5BEC1C5E565F00C804F3 /* VenuesViewController.m */; };
+		72FE5BF11C5E5F1A00C804F3 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5BF01C5E5F1A00C804F3 /* PhotosViewController.m */; };
+		72FE5BF21C5E5F1A00C804F3 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5BF01C5E5F1A00C804F3 /* PhotosViewController.m */; };
+		72FE5C2C1C5E6CE800C804F3 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C2B1C5E6CE800C804F3 /* UIColor+Extensions.m */; };
+		72FE5C2F1C5E719700C804F3 /* VenueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C2E1C5E719700C804F3 /* VenueCell.m */; };
+		72FE5C301C5E719700C804F3 /* VenueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C2E1C5E719700C804F3 /* VenueCell.m */; };
+		72FE5C331C5E795700C804F3 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C321C5E795700C804F3 /* UIView+AutoLayout.m */; };
+		72FE5C341C5E795700C804F3 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C321C5E795700C804F3 /* UIView+AutoLayout.m */; };
+		72FE5C371C5EABCE00C804F3 /* PhotoItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C361C5EABCE00C804F3 /* PhotoItemCell.m */; };
+		72FE5C381C5EABCE00C804F3 /* PhotoItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C361C5EABCE00C804F3 /* PhotoItemCell.m */; };
+		72FE5C421C5F3F6000C804F3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C411C5F3F6000C804F3 /* MBProgressHUD.m */; };
+		72FE5C431C5F3F6000C804F3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C411C5F3F6000C804F3 /* MBProgressHUD.m */; };
+		72FE5C461C5F52AF00C804F3 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C451C5F52AF00C804F3 /* Helper.m */; };
+		72FE5C471C5F52AF00C804F3 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C451C5F52AF00C804F3 /* Helper.m */; };
+		72FE5C4A1C5F72F900C804F3 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C491C5F72F900C804F3 /* MapViewController.m */; };
+		72FE5C4B1C5F72F900C804F3 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C491C5F72F900C804F3 /* MapViewController.m */; };
+		72FE5C4D1C5F73E700C804F3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FE5C4C1C5F73E700C804F3 /* MapKit.framework */; };
+		72FE5C501C5F77F200C804F3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C4F1C5F77F200C804F3 /* NavigationController.m */; };
+		72FE5C511C5F77F200C804F3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C4F1C5F77F200C804F3 /* NavigationController.m */; };
+		72FE5C551C5F7BF000C804F3 /* GeoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C541C5F7BF000C804F3 /* GeoService.m */; };
+		72FE5C561C5F7BF000C804F3 /* GeoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C541C5F7BF000C804F3 /* GeoService.m */; };
+		72FE5C591C5F8BA400C804F3 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C581C5F8BA400C804F3 /* MapAnnotation.m */; };
+		72FE5C5A1C5F8BA400C804F3 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FE5C581C5F8BA400C804F3 /* MapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +203,29 @@
 		72FE5BE91C5E4B7900C804F3 /* MockVenueService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockVenueService.m; sourceTree = "<group>"; };
 		72FE5BEB1C5E565F00C804F3 /* VenuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VenuesViewController.h; path = Classes/ViewControllers/VenuesViewController.h; sourceTree = "<group>"; };
 		72FE5BEC1C5E565F00C804F3 /* VenuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VenuesViewController.m; path = Classes/ViewControllers/VenuesViewController.m; sourceTree = "<group>"; };
+		72FE5BEF1C5E5F1A00C804F3 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosViewController.h; path = Classes/ViewControllers/PhotosViewController.h; sourceTree = "<group>"; };
+		72FE5BF01C5E5F1A00C804F3 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosViewController.m; path = Classes/ViewControllers/PhotosViewController.m; sourceTree = "<group>"; };
+		72FE5C2A1C5E6CE800C804F3 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extensions.h"; path = "Classes/BusinessLogic/Helpers/UIColor+Extensions.h"; sourceTree = "<group>"; };
+		72FE5C2B1C5E6CE800C804F3 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extensions.m"; path = "Classes/BusinessLogic/Helpers/UIColor+Extensions.m"; sourceTree = "<group>"; };
+		72FE5C2D1C5E719700C804F3 /* VenueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VenueCell.h; path = Classes/ViewControllers/VenueCell.h; sourceTree = "<group>"; };
+		72FE5C2E1C5E719700C804F3 /* VenueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VenueCell.m; path = Classes/ViewControllers/VenueCell.m; sourceTree = "<group>"; };
+		72FE5C311C5E795700C804F3 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AutoLayout.h"; path = "External/UIView-AutoLayout/UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		72FE5C321C5E795700C804F3 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AutoLayout.m"; path = "External/UIView-AutoLayout/UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		72FE5C351C5EABCE00C804F3 /* PhotoItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoItemCell.h; path = Classes/ViewControllers/PhotoItemCell.h; sourceTree = "<group>"; };
+		72FE5C361C5EABCE00C804F3 /* PhotoItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoItemCell.m; path = Classes/ViewControllers/PhotoItemCell.m; sourceTree = "<group>"; };
+		72FE5C401C5F3F6000C804F3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = External/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		72FE5C411C5F3F6000C804F3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = External/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		72FE5C441C5F52AF00C804F3 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Helper.h; path = Classes/BusinessLogic/Helpers/Helper.h; sourceTree = "<group>"; };
+		72FE5C451C5F52AF00C804F3 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Helper.m; path = Classes/BusinessLogic/Helpers/Helper.m; sourceTree = "<group>"; };
+		72FE5C481C5F72F900C804F3 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = Classes/ViewControllers/MapViewController.h; sourceTree = "<group>"; };
+		72FE5C491C5F72F900C804F3 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = Classes/ViewControllers/MapViewController.m; sourceTree = "<group>"; };
+		72FE5C4C1C5F73E700C804F3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		72FE5C4E1C5F77F200C804F3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationController.h; path = Classes/ViewControllers/NavigationController.h; sourceTree = "<group>"; };
+		72FE5C4F1C5F77F200C804F3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationController.m; path = Classes/ViewControllers/NavigationController.m; sourceTree = "<group>"; };
+		72FE5C531C5F7BF000C804F3 /* GeoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeoService.h; path = Classes/BusinessLogic/ServiceLayer/Geo/GeoService.h; sourceTree = "<group>"; };
+		72FE5C541C5F7BF000C804F3 /* GeoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeoService.m; path = Classes/BusinessLogic/ServiceLayer/Geo/GeoService.m; sourceTree = "<group>"; };
+		72FE5C571C5F8BA400C804F3 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapAnnotation.h; path = Classes/ViewControllers/MapAnnotation.h; sourceTree = "<group>"; };
+		72FE5C581C5F8BA400C804F3 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapAnnotation.m; path = Classes/ViewControllers/MapAnnotation.m; sourceTree = "<group>"; };
 		D593059EE3A6088247D25F8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -189,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FE5C4D1C5F73E700C804F3 /* MapKit.framework in Frameworks */,
 				5890003C040C3750F45E054B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +252,7 @@
 		0EE319238FD15429DFCA1C0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72FE5C4C1C5F73E700C804F3 /* MapKit.framework */,
 				D593059EE3A6088247D25F8C /* libPods.a */,
 			);
 			name = Frameworks;
@@ -295,6 +342,9 @@
 		72FE5B451C58F66C00C804F3 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				72FE5C3C1C5F3F4100C804F3 /* MBProgressHUD */,
+				72FE5C311C5E795700C804F3 /* UIView+AutoLayout.h */,
+				72FE5C321C5E795700C804F3 /* UIView+AutoLayout.m */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -315,8 +365,20 @@
 		72FE5B4B1C58F6A700C804F3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				72FE5C571C5F8BA400C804F3 /* MapAnnotation.h */,
+				72FE5C581C5F8BA400C804F3 /* MapAnnotation.m */,
 				72FE5BEB1C5E565F00C804F3 /* VenuesViewController.h */,
 				72FE5BEC1C5E565F00C804F3 /* VenuesViewController.m */,
+				72FE5BEF1C5E5F1A00C804F3 /* PhotosViewController.h */,
+				72FE5BF01C5E5F1A00C804F3 /* PhotosViewController.m */,
+				72FE5C2D1C5E719700C804F3 /* VenueCell.h */,
+				72FE5C2E1C5E719700C804F3 /* VenueCell.m */,
+				72FE5C351C5EABCE00C804F3 /* PhotoItemCell.h */,
+				72FE5C361C5EABCE00C804F3 /* PhotoItemCell.m */,
+				72FE5C481C5F72F900C804F3 /* MapViewController.h */,
+				72FE5C491C5F72F900C804F3 /* MapViewController.m */,
+				72FE5C4E1C5F77F200C804F3 /* NavigationController.h */,
+				72FE5C4F1C5F77F200C804F3 /* NavigationController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -324,6 +386,10 @@
 		72FE5B4C1C58F6B900C804F3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				72FE5C2A1C5E6CE800C804F3 /* UIColor+Extensions.h */,
+				72FE5C2B1C5E6CE800C804F3 /* UIColor+Extensions.m */,
+				72FE5C441C5F52AF00C804F3 /* Helper.h */,
+				72FE5C451C5F52AF00C804F3 /* Helper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -358,6 +424,7 @@
 		72FE5B4E1C58F6C400C804F3 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				72FE5C521C5F7BCF00C804F3 /* Geo */,
 				72FE5B4F1C58F6D400C804F3 /* Venue */,
 				72FE5B521C58F75700C804F3 /* AbstractCache.h */,
 				72FE5B531C58F75700C804F3 /* AbstractCache.m */,
@@ -437,6 +504,24 @@
 			name = Mocks;
 			sourceTree = "<group>";
 		};
+		72FE5C3C1C5F3F4100C804F3 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5C401C5F3F6000C804F3 /* MBProgressHUD.h */,
+				72FE5C411C5F3F6000C804F3 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		72FE5C521C5F7BCF00C804F3 /* Geo */ = {
+			isa = PBXGroup;
+			children = (
+				72FE5C531C5F7BF000C804F3 /* GeoService.h */,
+				72FE5C541C5F7BF000C804F3 /* GeoService.m */,
+			);
+			name = Geo;
+			sourceTree = "<group>";
+		};
 		96A11E275EC7874780427C8D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,6 +583,7 @@
 				TargetAttributes = {
 					72FE5B171C58EDCE00C804F3 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V85329WN9E;
 					};
 					72FE5B331C58EDCF00C804F3 = {
 						CreatedOnToolsVersion = 7.2;
@@ -606,12 +692,19 @@
 				72FE5BA01C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m in Sources */,
 				72FE5BBD1C5ABBDA00C804F3 /* VenueCache.m in Sources */,
 				72FE5BED1C5E565F00C804F3 /* VenuesViewController.m in Sources */,
+				72FE5C421C5F3F6000C804F3 /* MBProgressHUD.m in Sources */,
+				72FE5C501C5F77F200C804F3 /* NavigationController.m in Sources */,
 				72FE5B5E1C58F75700C804F3 /* AbstractEntityService.m in Sources */,
 				72FE5B601C58F75700C804F3 /* AbstractSerializer.m in Sources */,
+				72FE5C371C5EABCE00C804F3 /* PhotoItemCell.m in Sources */,
 				72FE5B821C590AF400C804F3 /* Location.m in Sources */,
+				72FE5C551C5F7BF000C804F3 /* GeoService.m in Sources */,
 				72FE5B5D1C58F75700C804F3 /* AbstractCache.m in Sources */,
 				72FE5B901C59118400C804F3 /* Photo+CoreDataProperties.m in Sources */,
 				72FE5B7A1C59062F00C804F3 /* Venue.m in Sources */,
+				72FE5C331C5E795700C804F3 /* UIView+AutoLayout.m in Sources */,
+				72FE5C2F1C5E719700C804F3 /* VenueCell.m in Sources */,
+				72FE5C2C1C5E6CE800C804F3 /* UIColor+Extensions.m in Sources */,
 				72FE5B921C59118400C804F3 /* Photo.m in Sources */,
 				72FE5B201C58EDCE00C804F3 /* AppDelegate.m in Sources */,
 				72FE5B9C1C591A4600C804F3 /* PhotoItem+CoreDataProperties.m in Sources */,
@@ -619,7 +712,9 @@
 				72FE5BC51C5ABC0F00C804F3 /* VenueParser.m in Sources */,
 				72FE5BA21C591A4600C804F3 /* PhotoGroup.m in Sources */,
 				72FE5B231C58EDCE00C804F3 /* MasterViewController.m in Sources */,
+				72FE5C461C5F52AF00C804F3 /* Helper.m in Sources */,
 				72FE5BCE1C5ABD5C00C804F3 /* MockVenueTransport.m in Sources */,
+				72FE5C4A1C5F72F900C804F3 /* MapViewController.m in Sources */,
 				72FE5BD21C5ACBB600C804F3 /* MockVenueParser.m in Sources */,
 				72FE5B611C58F75700C804F3 /* ServiceLayer.m in Sources */,
 				72FE5B801C590AF400C804F3 /* Location+CoreDataProperties.m in Sources */,
@@ -629,7 +724,9 @@
 				72FE5BB91C5ABBBF00C804F3 /* VenueService.m in Sources */,
 				72FE5B6E1C58FEF100C804F3 /* Model.xcdatamodeld in Sources */,
 				72FE5B781C59062E00C804F3 /* Venue+CoreDataProperties.m in Sources */,
+				72FE5C591C5F8BA400C804F3 /* MapAnnotation.m in Sources */,
 				72FE5BCA1C5ABD0900C804F3 /* MockVenueServiceDelegate.m in Sources */,
+				72FE5BF11C5E5F1A00C804F3 /* PhotosViewController.m in Sources */,
 				72FE5B5C1C58F75700C804F3 /* AbstractTransport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,8 +735,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FE5C5A1C5F8BA400C804F3 /* MapAnnotation.m in Sources */,
 				72FE5B931C59118400C804F3 /* Photo.m in Sources */,
+				72FE5C471C5F52AF00C804F3 /* Helper.m in Sources */,
 				72FE5BBA1C5ABBBF00C804F3 /* VenueService.m in Sources */,
+				72FE5C561C5F7BF000C804F3 /* GeoService.m in Sources */,
+				72FE5C511C5F77F200C804F3 /* NavigationController.m in Sources */,
 				72FE5BA11C591A4600C804F3 /* PhotoGroup+CoreDataProperties.m in Sources */,
 				72FE5B731C5902AF00C804F3 /* ServiceRegistryTests.m in Sources */,
 				72FE5B8B1C5910AD00C804F3 /* PhotoItemsTests.m in Sources */,
@@ -656,6 +757,9 @@
 				72FE5B911C59118400C804F3 /* Photo+CoreDataProperties.m in Sources */,
 				72FE5BE01C5CBCB900C804F3 /* InspectableVenueTransport.m in Sources */,
 				72FE5BE61C5CBD0700C804F3 /* FakeURLResponse.m in Sources */,
+				72FE5C381C5EABCE00C804F3 /* PhotoItemCell.m in Sources */,
+				72FE5BF21C5E5F1A00C804F3 /* PhotosViewController.m in Sources */,
+				72FE5C301C5E719700C804F3 /* VenueCell.m in Sources */,
 				72FE5BEA1C5E4B7900C804F3 /* MockVenueService.m in Sources */,
 				72FE5BC61C5ABC0F00C804F3 /* VenueParser.m in Sources */,
 				72FE5B891C59109800C804F3 /* PhotoGroupTests.m in Sources */,
@@ -665,8 +769,11 @@
 				72FE5BD51C5B9E5D00C804F3 /* VenueParserTests.m in Sources */,
 				72FE5B9F1C591A4600C804F3 /* PhotoItem.m in Sources */,
 				72FE5B661C58FE2700C804F3 /* VenueTests.m in Sources */,
+				72FE5C341C5E795700C804F3 /* UIView+AutoLayout.m in Sources */,
+				72FE5C431C5F3F6000C804F3 /* MBProgressHUD.m in Sources */,
 				72FE5BCF1C5ABD5C00C804F3 /* MockVenueTransport.m in Sources */,
 				72FE5BA31C591A4600C804F3 /* PhotoGroup.m in Sources */,
+				72FE5C4B1C5F72F900C804F3 /* MapViewController.m in Sources */,
 				72FE5BD31C5ACBB600C804F3 /* MockVenueParser.m in Sources */,
 				72FE5B9D1C591A4600C804F3 /* PhotoItem+CoreDataProperties.m in Sources */,
 			);
@@ -787,10 +894,12 @@
 			baseConfigurationReference = 5057D7A736C541CAF30DFF2F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Forsquare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kovalgek.Forsquare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entechsolutions.EventGridManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -799,10 +908,12 @@
 			baseConfigurationReference = 010DB9C87803CCC45440C8D1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Forsquare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kovalgek.Forsquare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entechsolutions.EventGridManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

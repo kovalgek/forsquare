@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "VenueService.h"
+#import "GeoService.h"
 
 @interface ServiceLayer : NSObject
 @property (nonatomic, strong) VenueService *venueService;
+@property (nonatomic, strong) GeoService   *geoService;
 @end

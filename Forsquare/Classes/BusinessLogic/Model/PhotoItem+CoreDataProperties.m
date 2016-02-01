@@ -20,5 +20,7 @@
 @dynamic widthAttribute;
 @dynamic heightAttribute;
 @dynamic group;
+@dynamic imageAttribute;
+@dynamic imageIsDownloadingAttribute;
 
 @end
